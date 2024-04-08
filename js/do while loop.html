@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myoutcome() {
+        var i = document.getElementById("i").value;
+        var number = 1;
+        var op = "";
+        do {
+          op = number * i;
+          document.write(i + "x" + number + "=" + op + "<br>");
+          number++;
+        } while (number <= 10);
+      }
+    </script>
+    <input type="number" name="" id="i" />
+    <input
+      type="button"
+      name=""
+      id="myid"
+      value="Clickme"
+      onclick="myoutcome()"
+    />
+  </body>
+</html>

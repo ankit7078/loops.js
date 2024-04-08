@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <script>
+      function myOutcome() {
+        var txtvalue = document.getElementById("txtvalue").value;
+        var number = 1;
+        var op = "";
+        while (number <= 10) {
+          //document.write(txtvalue*number + "<br>");
+          op = txtvalue * number;
+          document.write(txtvalue + " X " + number + " = " + op + "<br>");
+          number++;
+        }
+      }
+    </script>
+
+    <input type="number" id="txtvalue" name="" value="" />
+    <input id="myid" type="button" value="Click Me " onclick="myOutcome()" />
+  </body>
+</html>

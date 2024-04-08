@@ -1,0 +1,14 @@
+{
+  "name": "vscode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass projects/project1/codes/main.scss projects/project1/codes/style.css -w"
+  },
+  "author": "ankit",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}

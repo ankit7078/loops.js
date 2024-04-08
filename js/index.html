@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myfunction() {
+        var text = document.getElementById("written").value;
+        document.getElementById("output").innerHTML = text;
+
+        var fontsize = document.getElementById("font-size").value;
+        document.getElementById("output").style.fontSize = fontsize + "px";
+
+        var fontcolor = document.getElementById("font-color").value;
+        document.getElementById("output").style.color = fontcolor;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>text</h1>
+    <textarea name="" id="written" cols="30" rows="10"></textarea>
+    <h1>font-color</h1>
+    <select name="" id="font-color">
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+    </select>
+    <h1>font-size</h1>
+    <input type="number" id="font-size" />
+
+    <button id="click" onclick="myfunction()">submit</button>
+    <span id="output"></span>
+  </body>
+</html>
